@@ -1,0 +1,47 @@
+.cuadro{
+    height: 100%;
+    width: 30%;
+    max-width: 600px;
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    margin-top: 0;
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    text-align: right;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 2%;
+    .campo{
+        display: flex;
+        align-items: center;
+        padding: 2% 0;
+        width: 100%;
+        border-bottom: 2px solid white;
+        font-size: clamp(5px, 2vw, 50px);
+        button{
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: right;
+            text-decoration: none;
+            color: white;
+            font-size: clamp(5px, 2vw, 50px);
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: orange;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        img{
+            margin-left: auto;
+            max-width: 30%;
+        }
+    }
+}
+.boton-desactivado {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

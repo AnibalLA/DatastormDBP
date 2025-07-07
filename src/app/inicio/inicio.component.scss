@@ -1,0 +1,15 @@
+.cuadro{
+    margin-top: 20%;
+    margin-left: 2vw;
+    width: 50%;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    font-size: clamp(10px, 4vw, 150px);
+    h1{
+        text-align: left;
+        font-size: clamp(5px, 10vw, 400px);
+        border-bottom: 0.5vh solid white;
+        margin-bottom: 0;
+    }
+}

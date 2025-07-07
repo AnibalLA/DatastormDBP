@@ -1,0 +1,29 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:ont="http://example.org/ontology#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <rdf:Description rdf:about="/comentario/32">
+       <ont:contenido>Ya mano</ont:contenido>
+    </rdf:Description>
+    <rdf:Description rdf:about="/usuario/9">
+        <ont:haVistoComentario rdf:resource="/comentario/17"/>
+        <ont:haVistoComentario rdf:resource="/comentario/19"/>
+        <ont:haVistoComentario rdf:resource="/comentario/21"/>
+        <ont:haVistoComentario rdf:resource="/comentario/22"/>
+        <ont:haVistoComentario rdf:resource="/comentario/23"/>
+        <ont:haVistoComentario rdf:resource="/comentario/24"/>
+        <ont:haVistoComentario rdf:resource="/comentario/25"/>
+        <ont:haVistoComentario rdf:resource="/comentario/27"/>
+        <ont:haVistoComentario rdf:resource="/comentario/32"/>
+        <ont:haVistoNoticia rdf:resource="/noticia/16"/>
+        <ont:haVistoNoticia rdf:resource="/noticia/17"/>
+        <ont:haVistoNoticia rdf:resource="/noticia/18"/>
+        <ont:haVistoNoticia rdf:resource="/noticia/19"/>
+        <ont:haVistoNoticia rdf:resource="/noticia/20"/>
+        <ont:hizoComentario rdf:resource="/comentario/32"/>
+        <ont:userDaLikeNoticia rdf:resource="/noticia/17"/>
+        <ont:userDaLikeNoticia rdf:resource="/noticia/18"/>
+        <foaf:mbox>Bayern06@gmail.com</foaf:mbox>
+        <foaf:name>Thomas</foaf:name>
+    </rdf:Description>
+</rdf:RDF>

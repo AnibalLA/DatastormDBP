@@ -1,0 +1,91 @@
+.cuadro {
+    background-color:rgb(35, 35, 35);
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+    border-radius: 20px;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+
+    .cabezera{
+        display: flex;
+        border-bottom: 2px solid white;
+        margin-bottom: 5%;
+        h1{
+            color: white;
+            text-align: left;
+            padding: 2% 5%;
+            font-size: clamp(10px, 4vw, 40px);
+        }
+        img {
+            margin-left: auto;
+            margin-top: 20px;
+            margin-right: 5%;
+            margin-bottom: 3%;
+            max-width: 8%;
+            filter: invert(1) brightness(1000%);
+        }
+    }
+
+    .campo {
+        display: flex;
+        margin: 2% 5%;
+        align-items: center;
+
+        label {
+            color: white;
+            font-weight: bold;
+            font-size: clamp(10px, 4vw, 40px);
+        }
+
+        input {
+            background-color: #555; 
+            border: none;
+            border-radius: 40px;
+            height: auto;
+            width: 65%;
+            padding: 1.5% 5%;
+            color: white; 
+            font-size: clamp(10px, 4vw, 40px);
+            margin-left: auto;
+        }
+
+        input::placeholder {
+            color: #f8f6f6; 
+        }
+
+        .edad {
+            display: flex;
+            justify-content: start; 
+            margin-top: 5px;
+        }
+        
+        .edad input {
+            background-color: #555;
+            border: none;
+            border-radius: 5px;
+            width: 20%; 
+            text-align: center;
+            padding: 1.5% 2%;
+            color: white;
+            font-size: clamp(10px, 3.5vw, 40px);
+        }
+        .btn {
+            background-color: orange;
+            border: 2px solid orange;
+            border-radius: 20px;
+            width: 30%;
+            margin: 5% auto;
+            cursor: pointer;
+            color: white;
+            font-size: clamp(10px, 4vw, 60px);
+            font-weight: bold;
+        }
+        .btn:hover{
+            background-color: rgb(230, 177, 79);
+            border: 2px solid rgb(255, 255, 255);
+        }
+    }
+}

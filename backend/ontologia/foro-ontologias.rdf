@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<!-- definir clases , propiedades ayuda -->
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:ex="https://datastorm#">
+    <!---Lo de encima son estandares internacionales, above :ex--> 
+    <!--USUARIO-->
+                                <!--uri unica de mi concepto / abstraccion -->
+    <rdf:Description rdf:about="https://datastorm#Usuario"> <!--Semantic web hash -->
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/><!--type: esto es una clase/resource: pero de ttipo rdfs-->
+    </rdf:Description>
+
+    <!--PUBLICACION-->
+    <rdf:Description rdf:about="https://datastorm#Publicacion"> 
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+
+    <!--COMENTARIO-->
+    <rdf:Description rdf:about="https://datastorm#Comentario"> 
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+
+    <!--HISTORIAL NOTICIA-->
+    <rdf:Description rdf:about="https://datastorm#HistorialNoticia"> 
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+
+    <!--HISTORIAL COMENTARIO-->
+    <rdf:Description rdf:about="https://datastorm#HistorialComentario"> 
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+    <!--PROPIEDADES de whatever usuario-->
+    <!--id-->
+    <rdf:Description rdf:about="https://datastorm#idUsuario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <!--nombre-->
+    <rdf:Description rdf:about="https://datastorm#nombreUsuario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+
+    <!--correo-->
+    <rdf:Description rdf:about="https://datastorm#correoUsuario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+
+    <!--contrasena-->
+    <rdf:Description rdf:about="https://datastorm#passwdUsuario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+    <!--dia-->
+    <rdf:Description rdf:about="https://datastorm#diaUsuario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <!--mes-->
+    <rdf:Description rdf:about="https://datastorm#mesUsuario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <!--anyo-->
+    <rdf:Description rdf:about="https://datastorm#anyoUsuario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Usuario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <!--historial noticia-->
+    <rdf:Description rdf:about="https://datastorm#histNoticia">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Usuario"/>
+        <rdfs:range rdf:resource="https://datastorm#HistorialNoticia"/>
+    </rdf:Description>
+
+    <!--historial comentario-->
+    <rdf:Description rdf:about="https://datastorm#histComentario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Usuario"/>
+        <rdfs:range rdf:resource="https://datastorm#HistorialComentario"/>
+    </rdf:Description>
+
+
+
+    <!--PROPIEDADES historialNoticia-->
+    <!--id-->
+    <rdf:Description rdf:about="https://datastorm#idHistNoticia">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#HistorialNoticia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <!--fecha vista when-->
+    <rdf:Description rdf:about="https://datastorm#fechaHistNoticia">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#HistorialNoticia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </rdf:Description> 
+
+    <!--usuario-->
+    <rdf:Description rdf:about="https://datastorm#idUsuarioHistNoticia">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#HistorialNoticia"/>
+        <rdfs:range rdf:resource="https://datastorm#Usuario"/>
+    </rdf:Description>  
+
+    <!--from where-->
+    <rdf:Description rdf:about="https://datastorm#idPublicacionHistNoticia">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#HistorialNoticia"/>
+        <rdfs:range rdf:resource="https://datastorm#Publicacion"/>
+    </rdf:Description> 
+
+
+
+    <!--PROPIEDADES historialComentario-->
+    <!--id-->
+    <rdf:Description rdf:about="https://datastorm#idHistComent">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#HistorialComentario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <!--fecha vista when-->
+    <rdf:Description rdf:about="https://datastorm#fechaHistComent">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#HistorialComentario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </rdf:Description> 
+
+    <!--usuario-->
+    <rdf:Description rdf:about="https://datastorm#idUsuarioHistComent">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#HistorialComentario"/>
+        <rdfs:range rdf:resource="https://datastorm#Usuario"/>
+    </rdf:Description>  
+
+    <!--from where-->
+    <rdf:Description rdf:about="https://datastorm#idComentarioHistComent">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#HistorialComentario"/>
+        <rdfs:range rdf:resource="https://datastorm#Comentario"/>
+    </rdf:Description> 
+
+
+
+
+    <!--PROPIEDADES publicacion-->
+    <!--id-->
+    <rdf:Description rdf:about="https://datastorm#idPublicacion">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <!--titulo-->
+    <rdf:Description rdf:about="https://datastorm#titulo">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+
+    <!--categoria-->
+    <rdf:Description rdf:about="https://datastorm#categoria">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+
+    <!--autor-->
+    <rdf:Description rdf:about="https://datastorm#autor">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Publicacion"/>
+        <rdfs:range rdf:resource="https://datastorm#Usuario"/>
+    </rdf:Description>  
+
+    <!--fecha-->
+    <rdf:Description rdf:about="https://datastorm#fecha">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </rdf:Description>     
+
+    <!--veces compartido-->
+    <rdf:Description rdf:about="https://datastorm#compartidos">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <!--parrafos-->
+    <rdf:Description rdf:about="https://datastorm#contenido">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+
+    <!--tiene comentarios-->
+    <rdf:Description rdf:about="https://datastorm#tieneComentario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Publicacion"/>
+        <rdfs:range rdf:resource="https://datastorm#Comentario"/>
+    </rdf:Description>   
+
+
+
+    <!--PROPIEDADES comentario-->
+    <!--id-->
+    <rdf:Description rdf:about="https://datastorm#idComentario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Comentario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <!--autor-->
+    <rdf:Description rdf:about="https://datastorm#autorUsuario">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Comentario"/>
+        <rdfs:range rdf:resource="https://datastorm#Usuario"/>
+    </rdf:Description> 
+
+    <!--Publicacion-->
+    <rdf:Description rdf:about="https://datastorm#perteneceAPublicacion">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Comentario"/>
+        <rdfs:range rdf:resource="https://datastorm#Publicacion"/>
+    </rdf:Description> 
+
+    <!--opinion-->
+    <rdf:Description rdf:about="https://datastorm#opinion">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="https://datastorm#Comentario"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+
+    <!--fecha-->
+    <rdf:Description rdf:about="https://datastorm#dateComentario"><!--name de la propiedad-->
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/><!--declaracion de que ES una propiedad-->
+        <rdfs:domain rdf:resource="https://datastorm#Comentario"/><!--clase de donde parte-->
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/><!--clase a donde apunta-->
+    </rdf:Description>          <!--xmls:date porque es un literal-->
+
+</rdf:RDF>
+

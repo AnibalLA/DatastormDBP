@@ -1,0 +1,37 @@
+@prefix : <http://datastorm/ontology#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Usuario a owl:Class ;
+    rdfs:label "Usuario" ;
+    rdfs:comment "Un usuario registrado en la plataforma" ;
+    #rdfs:subClassOf foaf:Person ;
+    #owl:equivalentClass dbo:Person .
+
+:UserName a owl:DatatypeProperty ;
+    rdfs:domain :Usuario ;
+    rdfs:range xsd:string ;
+    rdfs:label "nombre de usuario" .
+
+:Correo a owl:DatatypeProperty ;
+    rdfs:domain :Usuario ;
+    rdfs:range xsd:string ;
+    rdfs:label "correo electrónico" .
+
+:Dia a owl:DatatypeProperty ;
+    rdfs:domain :Usuario ;
+    rdfs:range xsd:integer ;
+    rdfs:label "día de nacimiento" .
+
+:Mes a owl:DatatypeProperty ;
+    rdfs:domain :Usuario ;
+    rdfs:range xsd:integer ;
+    rdfs:label "mes de nacimiento" .
+
+:Anio a owl:DatatypeProperty ;
+    rdfs:domain :Usuario ;
+    rdfs:range xsd:integer ;
+    rdfs:label "año de nacimiento" .

@@ -1,0 +1,25 @@
+<div class="box">
+  <div class="search">
+  <input type="text" [(ngModel)]="keyword" placeholder="Buscar por palabra clave (NASA, vida, exploración...)" />
+  <button (click)="buscar()">Buscar</button>
+</div>
+
+<div class="divider"></div>
+
+  
+<div class="container" *ngFor="let noticia of noticias">
+  <div class="item">
+    <!--
+    <img [src]="noticia.imagen" alt="{{ noticia.titulo }}">
+    -->
+    <img src="searching\2.jpg" alt="{{ noticia.titulo }}">
+    <div class="text-block">
+      <h2>{{ noticia.titulo }}</h2>
+      <div class="info">
+        <p>{{ noticia.contenido}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+</div>
+</div>

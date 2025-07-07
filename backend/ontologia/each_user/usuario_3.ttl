@@ -1,0 +1,49 @@
+@prefix : <http://example.org/ontology#> .
+@prefix user: <http://example.org/usuario#> .
+@prefix pub: <http://example.org/publicacion#> .
+@prefix like: <http://example.org/like#> .
+@prefix hist: <http://example.org/historial#> .
+@prefix com: <http://example.org/comentario#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+user:usuario3 a :Usuario ;
+    :UserName "123" ;
+    :Correo "ayuda@gmail.com" ;
+    :Dia "2"^^xsd:int ;
+    :Mes "2"^^xsd:int ;
+    :Anio "2001"^^xsd:int .
+
+hist:historialnoticia6 a :HistorialNoticia ;
+    :fechaVista "Sun Jun 08 2025 10:47:31 GMT-0500 (Peru Standard Time)"^^xsd:dateTime ;
+    :vistoPor user:usuario3 ;
+    :vistoSobre pub:publicacion1 .
+
+like:like35 a :LikeNoticia ;
+    :fechaLike "Sun Jun 08 2025 08:53:50 GMT-0500 (Peru Standard Time)"^^xsd:dateTime ;
+    :dadoPor user:usuario3 ;
+    :dadoASobre pub:publicacion1 .
+
+com:comentario5 a :Comentario ;
+    :ContenidoComent "hola" ;
+    :FechaComent "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent user:usuario3 ;
+    :RelacionadoA pub:publicacion1 .
+
+com:comentario6 a :Comentario ;
+    :ContenidoComent "dssdfdf" ;
+    :FechaComent "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent user:usuario3 ;
+    :RelacionadoA pub:publicacion1 .
+
+hist:historialcomentarioundefined a :HistorialComentario ;
+    :FechaVista "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:dateTime ;
+    :UsuarioVista user:usuario3 ;
+    :NoticiaVista pub:publicacion1 ;
+    :ComentarioVisto com:comentario5 .
+
+hist:historialcomentarioundefined a :HistorialComentario ;
+    :FechaVista "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:dateTime ;
+    :UsuarioVista user:usuario3 ;
+    :NoticiaVista pub:publicacion1 ;
+    :ComentarioVisto com:comentario6 .
+

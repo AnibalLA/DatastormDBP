@@ -1,0 +1,223 @@
+.cuadro{
+    display: inline-flex;
+    background-color: rgb(31, 26, 26);
+    width: 95vw;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    .noticia{
+        display: flex;
+        width: 85vw;
+        flex-direction: column;
+        .cabezera{
+            position: relative;
+            height: 35%;
+            background-image: url('../../../public/noticia/fondo.jpeg');
+            background-size: cover;
+            background-position: top;
+            padding: 2%;
+            .texto{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 1% 5%;
+                font-size: clamp(5px, 4vw, 50px);
+                text-align: left;
+                h1{
+                    font-size: clamp(10px, 4.5vw, 60px);
+                    line-height: 1;
+                }
+            }
+            
+        }
+        .contenido{
+            margin: 2% 5%;
+            padding: 1%;
+            background-color: rgb(40, 40, 40);
+            font-size: clamp(10px, 1vw, 30px);
+        }
+    }
+    .lateral{
+        width: 15vw;
+        display: flex;
+        flex-direction: column;
+        border-left: 0.3vw solid white;
+        position: relative;
+        .campo{
+            margin: 10vh auto;
+            display: flex;
+            width: 12vw;
+            position: sticky;
+            top: 25vh;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            .botones{
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 40%;
+                    margin-left: auto;
+                }
+            }
+            .compartir{
+                line-height: 2;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.reaccion{
+    background-color: rgb(31, 26, 26);
+    width: 95vw;
+    margin: auto;
+    padding: 2vw 0;
+    align-items: center;
+    font-size: clamp(10px, 3vw, 30px);
+    color: white;
+    button{
+        padding: 1vw;
+        margin-right: 2vw;
+        background-color: rgb(45, 38, 38);
+        border: none;
+        font-size: clamp(10px, 3vw, 30px);
+        font-weight: bold;
+        color: white;
+    }
+    button:hover {
+        background-color: rgb(122, 122, 122);
+    }
+}
+
+.comentarios{
+    background-color: rgb(31, 26, 26);
+    width: 95vw;
+    margin: auto;
+    padding: 2vw 0;
+    .separador{
+        width: 75vw;
+        margin: 3vh 3vw;
+        display: flex;
+        border: 0.15vw solid white;
+        border-radius: 100px;
+        color: white;
+        align-items: center;
+        img{
+            margin-left: 2%;
+            filter: invert(1) brightness(1000%);
+            height: 4%;
+            width: 4%;
+        }
+        h1{
+            margin-left: 2%;
+            font-size: clamp(5px, 2vw, 40px);
+        }
+    }
+
+    .comentar{
+        width: 75vw;
+        margin: 2vw 3vw;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        textarea{
+            width: 90%;
+            height: 3.5vw;
+            font-size: clamp(10px, 1vw, 30px);
+        }
+        .boton{
+            width: 10%;
+            height: 4vw;
+            background-color: rgb(39, 165, 169);
+            color: white;
+            font-size: clamp(10px, 1vw, 30px);
+        }
+        .boton:hover{
+            background-color: rgb(116, 145, 146);
+            cursor: pointer;
+        }
+    }
+
+    .comentario{
+        width: 75vw;
+        margin: 2vw 3vw;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        .cabezera{
+            margin: auto;
+            width: 95%;
+            display: flex;
+            align-items: center;
+            img{
+                width: 8%;
+            }
+            .texto{
+                width: 50%;
+                align-items: center;
+                text-align: left;
+                line-height: 1;
+                h1{
+                    margin-left: 2%;
+                    font-size: clamp(5px, 1.5vw, 30px);
+                    line-height: 0.5;
+                }
+                h2{
+                    color: grey;
+                    margin-left: 2%;
+                    font-size: clamp(5px, 1.5vw, 20px);
+                }
+            }
+        }
+        .contenido{
+            margin: auto;
+            margin-top: 1%;
+            width: 95%;
+            padding: 1%;
+            background-color: rgb(40, 40, 40);
+            font-size: clamp(10px, 1vw, 30px);
+        }
+    }
+}
+
+.navegacion {
+    width: 20%;
+    margin:auto;
+    display: inline;
+    align-items: center;
+    button {
+        background-color: orange;
+        margin: 2vw 1vw;
+        border: none;
+        border-radius: 8px;
+        padding: 1vw 2vw;
+        color: white;
+        font-size: clamp(10px, 3vw, 30px);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(185, 139, 53);
+    }
+}
+.mostrar{
+    button {
+
+        align-items: center;
+        border-radius: 20px;
+        background-color: blue;
+        color: white;
+        font-size:20px;
+        font-family: serif;
+    }
+    button:hover {
+        background-color: rgb(21, 214, 205);
+    }
+}
+
+

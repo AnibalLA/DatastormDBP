@@ -1,0 +1,68 @@
+.cuadro {
+    background-color:rgb(35, 35, 35);
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 20px;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+
+    img {
+        max-width: 20%;
+        max-height: 20%;
+        filter: invert(1) brightness(1000%);
+        display: block; 
+        margin: 50px auto;
+    }
+
+    .campo {
+        background-color: rgb(25, 25, 25);
+        width: 85%;
+        height: auto;
+        border: none;
+        border-radius: 40px;
+        padding: 1.5% 3%;
+        margin: 1% auto ;
+        color: white;
+        font-size: clamp(10px, 5vw, 50px);
+        text-align: left;
+        .campo::placeholder{
+            color: white;
+        }
+    }
+
+    .logIn {
+        margin: 3% auto;
+        background: none;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        font-weight: bold;
+        color: orange;
+        font-size: clamp(10px, 5vw, 50px);
+    }
+    .logIn:hover {
+        color: rgb(185, 139, 53);
+    }
+    
+    button{
+        background-color: rgb(25, 25, 25);
+        width: 30%;
+        border-radius: 40px;
+        margin-bottom: 5%;
+        display: inline-flex;
+        justify-content: center;
+        padding: 2%;
+        text-decoration: none;
+        color: white;
+        font-size: clamp(10px, 5vw, 50px);
+        font-weight: bold;
+    }
+    button:hover{
+        background-color: rgb(69, 67, 67);
+    }
+}

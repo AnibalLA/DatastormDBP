@@ -1,0 +1,55 @@
+<div class="cuadro">
+    <div class="cabezera">
+        <h1>CREATE YOUR ACCOUNT</h1>
+        <img src="logo.png" alt="logo">
+    </div>
+
+    <form (ngSubmit)="onSubmit()" #signupForm="ngForm">
+        <div class="campo">
+            <label for="nombre">Name:</label>
+            <input class="campo" type="text" id="nombre" [(ngModel)]="newUser.UserName" name="Name" placeholder="Enter your name" required>
+        </div>
+        <div class="campo">
+            <label for="cuenta">Account:</label>
+            <input class="campo" 
+            type="email" 
+            id="cuenta" 
+            [(ngModel)]="newUser.Correo" 
+            name="Account" 
+            placeholder="Enter your account" 
+            required 
+            pattern="^[a-zA-Z0-9._%+-]+&#64;gmail\.com$" 
+            #correoInput="ngModel">
+        </div>
+        <div *ngIf="correoInput.invalid && correoInput.touched" style="color: red; font-size: small;">
+            <div *ngIf="correoInput.errors?.['required']">El correo es obligatorio.</div>
+            <div *ngIf="correoInput.errors?.['pattern']">El correo debe terminar en &#64;gmail.com</div>
+        </div>
+        <div class="campo">
+            <label for="contra">Password:</label>
+            <input class="campo" type="password" id="contra" [(ngModel)]="newUser.Contrasena" name="Password" placeholder="Enter your new password" required>
+        </div>
+        <div class="campo">
+            <label for="validar">Validate Password:</label>
+            <input class="campo" type="password" id="validar" [(ngModel)]="Confirmar" name="ValidatePassword" placeholder="Validate Password" required>
+        </div>
+        <div *ngIf="Confirmar && !passwordsMatch()" style="color: red; font-size: small;">
+            Las contraseñas no coinciden.
+        </div>
+        <div class="campo">
+            <label>AGE:</label>
+            <div class="edad">
+                <input class="campo" type="number" [(ngModel)]="newUser.Dia" name="Dia" placeholder="DAY" min="1" max="31" required>
+                <input class="campo" type="number" [(ngModel)]="newUser.Mes" name="Mes" placeholder="MONTH" min="1" max="12" required>
+                <input class="campo" type="number" [(ngModel)]="newUser.Anio" name="Anio" placeholder="YEAR" min="1900" required>
+            </div>
+            <div *ngIf="edadError" style="color: red; font-size: small;">
+                {{edadError}}
+            </div>
+        </div>
+        <div class="campo" style="text-align: center;">
+            <button class="btn" type="submit" [disabled]="!signupForm.form.valid || !formularioValido()">Register</button>
+        </div>
+    </form>
+
+</div>

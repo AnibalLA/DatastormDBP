@@ -1,0 +1,25 @@
+<div style="text-align: center">
+    <form class="cuadro" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <img src="logo.png" alt="">
+      <input
+        class="campo"
+        type="text"
+        id="User"
+        name="User"
+        [(ngModel)]="user.Correo"
+        placeholder="👤 | CORREO"
+        required
+      />
+      <input
+        class="campo"
+        type="password"
+        id="Password"
+        name="Password"
+        [(ngModel)]="user.Contrasena"
+        placeholder="🔒 | PASSWORD"
+        required
+      />
+      <input type="submit" class="logIn" value="Log In" [disabled]="!loginForm.form.valid" />
+      <button routerLink="/signup">SIGN UP</button>
+    </form>
+  </div>

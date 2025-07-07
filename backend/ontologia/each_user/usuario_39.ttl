@@ -1,0 +1,5 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix usu: <http://example.org/usuario/>.
+
+usu:39 foaf:mbox "anibal1232@gmail.com"; foaf:name "anibal".
+

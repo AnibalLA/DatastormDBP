@@ -1,0 +1,32 @@
+@prefix : <http://datastorm/ontology#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+
+:HistorialComentario a owl:Class ;
+    rdfs:label "Historial de Comentario" ;
+    rdfs:comment "Registro de un comentario visto por un usuario en una noticia" ;
+    rdfs:subClassOf dbo:Event .
+
+:fechaVista a owl:DatatypeProperty ;
+    rdfs:domain :HistorialComentario ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "fecha en que se visualizó el comentario" .
+
+##:usuarioVioComentario a owl:ObjectProperty ;
+#    rdfs:domain :HistorialComentario ;
+#    rdfs:range :Usuario ;
+#    rdfs:label "usuario que vio el comentario" .
+
+#:comentarioVisto a owl:ObjectProperty ;
+#    rdfs:domain :HistorialComentario ;
+#    rdfs:range :Comentario ;
+#    rdfs:label "comentario que fue visto" .
+
+#:noticiaVinculada a owl:ObjectProperty ;
+#    rdfs:domain :HistorialComentario ;
+#    rdfs:range :Publicacion ;
+#    rdfs:label "noticia relacionada con el comentario visto" .

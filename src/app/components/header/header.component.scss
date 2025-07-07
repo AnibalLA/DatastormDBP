@@ -1,0 +1,55 @@
+header {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    max-height: 120px;
+    display: flex;
+}
+
+.header {
+    width: 98%;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    .campo{
+        width: 100%;
+        text-align: right;
+    }
+
+    a:hover {
+        color: orange;
+    }
+    button {
+        padding: 0 1%;
+        display: inline-flex;
+        background: none;
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-size: clamp(5px, 3vw, 30px);
+        font-weight: bold;
+        h1{
+            font-size: clamp(10px, 6vw, 60px);
+        }
+    }
+    button:hover {
+        color: orange;
+    }
+    
+    
+}
+
+.login {
+    border: 1px solid white;
+    padding: clamp(1px, 4vw, 5px);
+}
+.boton-desactivado {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

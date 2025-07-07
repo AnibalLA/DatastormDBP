@@ -1,0 +1,8 @@
+<app-menu *ngIf="mmenu"></app-menu>
+<div class="ventana">
+    <app-header (solicitarMenu)="mostrarMenu()"></app-header>
+    <div class="contenido">
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+</div>

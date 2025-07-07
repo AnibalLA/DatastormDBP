@@ -1,0 +1,14 @@
+<div class="perfil-container">
+  <div class="sidebar">
+    <button routerLink="info" routerLinkActive="active">PERFIL</button>
+    <button (click)="verHistorial()">HISTORIAL</button>
+
+    <button routerLink="comentarios" routerLinkActive="active">HISTORIAL DE COMENTARIOS</button>
+    <!-- <button routerLink="Post" routerLinkActive="active">POST</button> -->
+    <button (click)="descargarRDF()">DESCARGAR RDF</button>
+    <button (click)="logout()">CERRAR SESION</button>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+@prefix : <http://example.org/ontology#> .
+@prefix com: <http://example.org/comentario#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+com:comentario1 a :Comentario ;
+    :ContenidoComent "fasdfasd" ;
+    :FechaComent "Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent com:usuario1 ;
+    :RelacionadoA com:noticia1 .
+
+com:comentario2 a :Comentario ;
+    :ContenidoComent "hola lola" ;
+    :FechaComent "Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent com:usuario1 ;
+    :RelacionadoA com:noticia1 .
+
+com:comentario3 a :Comentario ;
+    :ContenidoComent "sddfasdf" ;
+    :FechaComent "Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent com:usuario1 ;
+    :RelacionadoA com:noticia1 .
+
+com:comentario4 a :Comentario ;
+    :ContenidoComent "holaaaa" ;
+    :FechaComent "Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent com:usuario1 ;
+    :RelacionadoA com:noticia1 .
+
+com:comentario5 a :Comentario ;
+    :ContenidoComent "ahora si???" ;
+    :FechaComent "Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent com:usuario1 ;
+    :RelacionadoA com:noticia1 .
+
+com:comentario6 a :Comentario ;
+    :ContenidoComent "holaaa" ;
+    :FechaComent "Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent com:usuario1 ;
+    :RelacionadoA com:noticia2 .
+
+com:comentario7 a :Comentario ;
+    :ContenidoComent "alianza lima a segunda" ;
+    :FechaComent "Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent com:usuario1 ;
+    :RelacionadoA com:noticia2 .
+
+com:comentario8 a :Comentario ;
+    :ContenidoComent "buenos dias" ;
+    :FechaComent "Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent com:usuario1 ;
+    :RelacionadoA com:noticia2 .
+

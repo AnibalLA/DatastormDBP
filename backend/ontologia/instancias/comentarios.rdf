@@ -1,0 +1,52 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:ont="http://example.org/ontology#">
+    <ont:Comentario rdf:about="/comentario#comentario1">
+        <ont:AutorComent rdf:resource="/comentario#usuario1"/>
+        <ont:ContenidoComent>fasdfasd</ont:ContenidoComent>
+        <ont:FechaComent rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)</ont:FechaComent>
+        <ont:RelacionadoA rdf:resource="/comentario#noticia1"/>
+    </ont:Comentario>
+    <ont:Comentario rdf:about="/comentario#comentario2">
+        <ont:AutorComent rdf:resource="/comentario#usuario1"/>
+        <ont:ContenidoComent>hola lola</ont:ContenidoComent>
+        <ont:FechaComent rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)</ont:FechaComent>
+        <ont:RelacionadoA rdf:resource="/comentario#noticia1"/>
+    </ont:Comentario>
+    <ont:Comentario rdf:about="/comentario#comentario3">
+        <ont:AutorComent rdf:resource="/comentario#usuario1"/>
+        <ont:ContenidoComent>sddfasdf</ont:ContenidoComent>
+        <ont:FechaComent rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)</ont:FechaComent>
+        <ont:RelacionadoA rdf:resource="/comentario#noticia1"/>
+    </ont:Comentario>
+    <ont:Comentario rdf:about="/comentario#comentario4">
+        <ont:AutorComent rdf:resource="/comentario#usuario1"/>
+        <ont:ContenidoComent>holaaaa</ont:ContenidoComent>
+        <ont:FechaComent rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)</ont:FechaComent>
+        <ont:RelacionadoA rdf:resource="/comentario#noticia1"/>
+    </ont:Comentario>
+    <ont:Comentario rdf:about="/comentario#comentario5">
+        <ont:AutorComent rdf:resource="/comentario#usuario1"/>
+        <ont:ContenidoComent>ahora si???</ont:ContenidoComent>
+        <ont:FechaComent rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)</ont:FechaComent>
+        <ont:RelacionadoA rdf:resource="/comentario#noticia1"/>
+    </ont:Comentario>
+    <ont:Comentario rdf:about="/comentario#comentario6">
+        <ont:AutorComent rdf:resource="/comentario#usuario1"/>
+        <ont:ContenidoComent>holaaa</ont:ContenidoComent>
+        <ont:FechaComent rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)</ont:FechaComent>
+        <ont:RelacionadoA rdf:resource="/comentario#noticia2"/>
+    </ont:Comentario>
+    <ont:Comentario rdf:about="/comentario#comentario7">
+        <ont:AutorComent rdf:resource="/comentario#usuario1"/>
+        <ont:ContenidoComent>alianza lima a segunda</ont:ContenidoComent>
+        <ont:FechaComent rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)</ont:FechaComent>
+        <ont:RelacionadoA rdf:resource="/comentario#noticia2"/>
+    </ont:Comentario>
+    <ont:Comentario rdf:about="/comentario#comentario8">
+        <ont:AutorComent rdf:resource="/comentario#usuario1"/>
+        <ont:ContenidoComent>buenos dias</ont:ContenidoComent>
+        <ont:FechaComent rdf:datatype="http://www.w3.org/2001/XMLSchema#date">Wed May 28 2025 00:00:00 GMT-0500 (Peru Standard Time)</ont:FechaComent>
+        <ont:RelacionadoA rdf:resource="/comentario#noticia2"/>
+    </ont:Comentario>
+</rdf:RDF>

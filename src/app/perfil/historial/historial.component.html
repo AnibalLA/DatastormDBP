@@ -1,0 +1,15 @@
+<div class="section-title">
+  Historial
+</div>
+<div class="info-box">
+  <ul *ngIf="historialNoticias.length > 0; else sinNoticias">
+    <li *ngFor="let item of historialNoticias">
+      <strong>{{ item.titulo }}</strong><br>
+      <em>{{ item.fecha_vistah | date: 'dd/MM/yyyy HH:mm' }}</em>
+      <hr>
+    </li>
+  </ul>
+  <ng-template #sinNoticias>
+    <p>No hay historial de noticias.</p>
+  </ng-template>
+</div>

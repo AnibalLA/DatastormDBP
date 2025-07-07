@@ -1,0 +1,42 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:ont="http://example.org/ontology#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <rdf:Description rdf:about="/comentario/10">
+       <ont:contenido>ayuda</ont:contenido>
+    </rdf:Description>
+    <rdf:Description rdf:about="/comentario/11">
+       <ont:contenido>prueba</ont:contenido>
+    </rdf:Description>
+    <rdf:Description rdf:about="/comentario/4">
+       <ont:contenido>buena</ont:contenido>
+    </rdf:Description>
+    <rdf:Description rdf:about="/comentario/7">
+       <ont:contenido>jgjhjg</ont:contenido>
+    </rdf:Description>
+    <rdf:Description rdf:about="/comentario/8">
+       <ont:contenido>ayudaaaa</ont:contenido>
+    </rdf:Description>
+    <rdf:Description rdf:about="/comentario/9">
+       <ont:contenido>buena</ont:contenido>
+    </rdf:Description>
+    <rdf:Description rdf:about="/usuario/2">
+        <ont:haVistoComentario rdf:resource="/comentario/10"/>
+        <ont:haVistoComentario rdf:resource="/comentario/11"/>
+        <ont:haVistoComentario rdf:resource="/comentario/4"/>
+        <ont:haVistoComentario rdf:resource="/comentario/7"/>
+        <ont:haVistoComentario rdf:resource="/comentario/8"/>
+        <ont:haVistoComentario rdf:resource="/comentario/9"/>
+        <ont:hizoComentario rdf:resource="/comentario/10"/>
+        <ont:hizoComentario rdf:resource="/comentario/11"/>
+        <ont:hizoComentario rdf:resource="/comentario/4"/>
+        <ont:hizoComentario rdf:resource="/comentario/7"/>
+        <ont:hizoComentario rdf:resource="/comentario/8"/>
+        <ont:hizoComentario rdf:resource="/comentario/9"/>
+        <ont:userDaLikeNoticia rdf:resource="/noticia/1"/>
+        <ont:userDaLikeNoticia rdf:resource="/noticia/2"/>
+        <ont:userDaLikeNoticia rdf:resource="/noticia/3"/>
+        <foaf:mbox>lola@gmail.com</foaf:mbox>
+        <foaf:name>lola</foaf:name>
+    </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,25 @@
+<div class="cuadro">
+    <div class="campo">
+        <p>{{ usuario.UserName }}</p>
+        <img src="menu/user.webp" alt="user">
+    </div>
+    <div class="campo">
+    <button routerLink="/perfil">PERFIL</button>
+    </div>
+    <div class="campo">
+    <button routerLink="/news">NEWS</button>
+    </div>
+    <div class="campo">
+    <button routerLink="/aboutus">ABOUT US</button>
+    </div>
+    <div class="campo">
+    <button 
+            routerLink="/login" 
+            [disabled]="estaLogueado"
+            [class.boton-desactivado]="estaLogueado">
+            Log In </button>
+    </div>
+    <div class="campo">
+    <button routerLink="/searching">BUSCADOR</button>
+    </div>
+</div>

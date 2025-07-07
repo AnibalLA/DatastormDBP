@@ -1,0 +1,86 @@
+<div class="cuadro"  *ngIf="noticiaActual() as noticia" >
+    <div class="noticia">
+        <div class="cabezera">
+            <div class="texto">
+                <h1>{{ noticiaActual()?.titulo }}</h1>
+                <p>{{ noticiaActual()?.autor }}| {{ noticiaActual()?.fecha_publicacion | date }} </p>
+            </div>
+        </div>
+        <div class="contenido">
+            <p>
+                {{ noticiaActual()?.contenido }}
+            </p>
+        </div>
+    </div>
+
+    <div class="lateral">
+        <div class="campo">
+            <div class="botones">
+                <img src="noticia/fav.png" alt="fav">
+                <img src="noticia/exclam.png" alt="exclam">
+                <img src="noticia/bell.png" alt="bell">
+            </div>
+            <div class="compartir">
+                <p>SHARE THIS!</p>
+                <img src="noticia/facebook.png" alt="facebook">
+                <img src="noticia/twitter.png" alt="twitter">
+                <img src="noticia/linkedin.png" alt="linkedin">
+                <img src="noticia/redit.png" alt="redit">
+                <img src="noticia/vk.png" alt="vk">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="reaccion">
+  <div class="reaccion" *ngIf="noticiaActual() as noticia">
+    <div *ngIf="estaLogueado; else noLike">
+        <button (click)="toggleLike(noticia)">
+            <span *ngIf="usuarioDioLike[noticia.idnoticias]">💔 Quitar Like</span>
+      <span *ngIf="!usuarioDioLike[noticia.idnoticias]">❤️ Dar Like</span>
+    </button>
+    </div>
+    <ng-template #noLike>
+    <span style="color: red; font-size: small;">
+      Inicia sesión para dar like
+    </span>
+  </ng-template>
+    <span>Likes: {{ likesPorNoticia[noticia.idnoticias] || 0 }}</span>
+    
+  </div>
+</div>
+
+<div class="comentarios">
+    <div class="separador">
+        <img src="noticia/comentario.png" alt="">
+        <h1>Comments</h1>
+    </div>
+    <div class="comentar" *ngIf="estaLogueado">
+        <textarea [(ngModel)]="nuevoComentario" placeholder="Comentario..."></textarea>
+        <button class="boton" (click)="enviarComentario()" type="button"> POST </button>
+    </div>
+    <div *ngIf="!estaLogueado" style="color: red; font-size: small;">
+        Debes iniciar sesion para comentar 
+    </div>
+    <div class="comentario" *ngFor="let comentario of comentariosMostrados">
+        <div class="cabezera">
+            <img src="noticia/user.png" alt="Usuario">
+            <div class="texto">
+                <h1>{{ comentario.username}}</h1>
+                <h2>{{ comentario.fechacoment}}</h2>
+            </div>
+        </div>
+        <div class="contenido">
+            <p> {{ comentario.contenido}}</p>
+        </div> 
+    </div>
+    <div class="mostrar">
+        <button *ngIf="comentariosVisibles < comentarios.length" (click)="mostrarMasComentarios()"> 
+            Mostrar más comentarios
+        </button>
+    </div>
+</div>
+<div class="navegacion">
+    <button *ngIf="indiceActual > 0" (click)="anterior()">⬅ Back</button>
+    <button *ngIf="indiceActual < noticias.length - 1" (click)="siguiente()">Next➡</button>
+</div>

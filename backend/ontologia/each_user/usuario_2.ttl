@@ -1,0 +1,65 @@
+@prefix : <http://example.org/ontology#> .
+@prefix user: <http://example.org/usuario#> .
+@prefix pub: <http://example.org/publicacion#> .
+@prefix like: <http://example.org/like#> .
+@prefix hist: <http://example.org/historial#> .
+@prefix com: <http://example.org/comentario#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+user:usuario2 a :Usuario ;
+    :UserName "lola" ;
+    :Dia "2"^^xsd:int ;
+    :Mes "2"^^xsd:int ;
+    :Anio "2000"^^xsd:int .
+
+like:like31 a :LikeNoticia ;
+    :fechaLike "Sun Jun 08 2025 08:51:46 GMT-0500 (Peru Standard Time)"^^xsd:dateTime ;
+    :dadoPor user:usuario2 ;
+    :dadoASobre pub:publicacion1 .
+
+like:like62 a :LikeNoticia ;
+    :fechaLike "Sun Jun 08 2025 15:07:27 GMT-0500 (Peru Standard Time)"^^xsd:dateTime ;
+    :dadoPor user:usuario2 ;
+    :dadoASobre pub:publicacion2 .
+
+like:like65 a :LikeNoticia ;
+    :fechaLike "Sun Jun 08 2025 18:01:35 GMT-0500 (Peru Standard Time)"^^xsd:dateTime ;
+    :dadoPor user:usuario2 ;
+    :dadoASobre pub:publicacion3 .
+
+com:comentario4 a :Comentario ;
+    :ContenidoComent "buena" ;
+    :FechaComent "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent user:usuario2 ;
+    :RelacionadoA pub:publicacion1 .
+
+com:comentario7 a :Comentario ;
+    :ContenidoComent "jgjhjg" ;
+    :FechaComent "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent user:usuario2 ;
+    :RelacionadoA pub:publicacion1 .
+
+com:comentario8 a :Comentario ;
+    :ContenidoComent "ayudaaaa" ;
+    :FechaComent "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent user:usuario2 ;
+    :RelacionadoA pub:publicacion1 .
+
+com:comentario9 a :Comentario ;
+    :ContenidoComent "buena" ;
+    :FechaComent "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent user:usuario2 ;
+    :RelacionadoA pub:publicacion2 .
+
+com:comentario10 a :Comentario ;
+    :ContenidoComent "ayuda" ;
+    :FechaComent "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent user:usuario2 ;
+    :RelacionadoA pub:publicacion3 .
+
+com:comentario11 a :Comentario ;
+    :ContenidoComent "prueba" ;
+    :FechaComent "Sun Jun 08 2025 00:00:00 GMT-0500 (Peru Standard Time)"^^xsd:date ;
+    :AutorComent user:usuario2 ;
+    :RelacionadoA pub:publicacion3 .
+

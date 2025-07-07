@@ -1,0 +1,67 @@
+footer {
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    margin-top: 5%;
+    display: flex;
+    padding: clamp(10px, 5%, 50px) 0;
+    color: white;
+}
+
+.campo {
+    flex: 1;
+    display: block;
+    margin: 0 clamp(10px, 2%, 100px);
+    justify-items: center;
+    line-height: 0;
+
+    h1{
+        font-weight: bold;
+        font-size: clamp(10px, 4vw, 60px);
+    }
+    h2{
+        font-weight: bold;
+        font-size: clamp(7px, 3vw, 50px);
+    }
+    h3{
+        font-style: italic;
+        font-size: clamp(5px, 2.5vw, 40px);
+    }
+    input{
+        width: 70%;
+        height: 20%;
+        max-height: 20px;
+        max-width: 1500px;
+    }
+    button{
+        background-color: rgb(39, 165, 169);
+        border: none;
+        height: 25%;
+        max-height: 25px;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(73, 136, 138);
+    }
+    a{
+        line-height: 1;
+        font-size: clamp(5px, 2vw, 30px);
+        text-decoration: none;
+        color: white;
+        font-style: italic;
+    }
+    a:hover{
+        color: rgb(145, 145, 145);
+    }
+    a img{
+        width: 80%;
+        height: 85%;
+        max-width: 100px;
+        margin: 0 clamp(1px, 5%, 20px);
+        filter: invert(1) brightness(1000%);
+        cursor: pointer;
+    }
+    a img:hover{
+        filter: invert(1) brightness(50%);
+    }
+}

@@ -1,0 +1,22 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:ont="http://example.org/ontology#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <rdf:Description rdf:about="/comentario/31">
+       <ont:contenido>Chevere sus noticias, muy pocas</ont:contenido>
+    </rdf:Description>
+    <rdf:Description rdf:about="/usuario/30">
+        <ont:haVistoComentario rdf:resource="/comentario/21"/>
+        <ont:haVistoComentario rdf:resource="/comentario/22"/>
+        <ont:haVistoComentario rdf:resource="/comentario/23"/>
+        <ont:haVistoComentario rdf:resource="/comentario/24"/>
+        <ont:haVistoComentario rdf:resource="/comentario/25"/>
+        <ont:haVistoComentario rdf:resource="/comentario/27"/>
+        <ont:haVistoNoticia rdf:resource="/noticia/17"/>
+        <ont:haVistoNoticia rdf:resource="/noticia/18"/>
+        <ont:hizoComentario rdf:resource="/comentario/31"/>
+        <ont:userDaLikeNoticia rdf:resource="/noticia/18"/>
+        <foaf:mbox></foaf:mbox>
+        <foaf:name></foaf:name>
+    </rdf:Description>
+</rdf:RDF>

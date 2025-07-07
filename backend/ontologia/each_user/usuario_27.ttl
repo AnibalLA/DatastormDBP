@@ -1,0 +1,45 @@
+@prefix : <http://example.org/ontology#> .
+@prefix user: <http://example.org/usuario#> .
+@prefix pub: <http://example.org/publicacion#> .
+@prefix like: <http://example.org/like#> .
+@prefix hist: <http://example.org/historial#> .
+@prefix com: <http://example.org/comentario#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+user:usuario27 a :Usuario ;
+    :UserName "BayernMunich1232" ;
+    :Dia "12"^^xsd:int ;
+    :Mes "12"^^xsd:int ;
+    :Anio "2005"^^xsd:int .
+
+hist:historialnoticia11 a :HistorialNoticia ;
+    :fechaVista "Tue Jun 10 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :vistoPor user:usuario27 ;
+    :vistoSobre pub:publicacion18 .
+
+hist:historialnoticia12 a :HistorialNoticia ;
+    :fechaVista "Tue Jun 10 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :vistoPor user:usuario27 ;
+    :vistoSobre pub:publicacion17 .
+
+hist:historialnoticia13 a :HistorialNoticia ;
+    :fechaVista "Tue Jun 10 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :vistoPor user:usuario27 ;
+    :vistoSobre pub:publicacion20 .
+
+hist:historialnoticia14 a :HistorialNoticia ;
+    :fechaVista "Tue Jun 10 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :vistoPor user:usuario27 ;
+    :vistoSobre pub:publicacion19 .
+
+hist:historialnoticia15 a :HistorialNoticia ;
+    :fechaVista "Tue Jun 10 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :vistoPor user:usuario27 ;
+    :vistoSobre pub:publicacion16 .
+
+com:comentario31 a :Comentario ;
+    :ContenidoComent "aeaeaeaeaeeeae" ;
+    :FechaComent "Tue Jun 10 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:date ;
+    :AutorComent user:usuario27 ;
+    :RelacionadoA pub:publicacion18 .
+

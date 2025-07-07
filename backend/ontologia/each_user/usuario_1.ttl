@@ -1,0 +1,26 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix com: <http://example.org/comentario/>.
+@prefix ont: <http://example.org/ontology#>.
+@prefix usu: <http://example.org/usuario/>.
+@prefix not: <http://example.org/noticia/>.
+
+com:18 ont:contenido "eee".
+
+com:19 ont:contenido "Mala noticia crj".
+
+com:20 ont:contenido "Mirera".
+
+com:21 ont:contenido "Crj".
+
+com:22 ont:contenido "Holaa".
+
+com:23 ont:contenido "buena".
+
+com:24 ont:contenido "Muy buena".
+
+usu:1
+    ont:haVistoComentario com:21, com:22, com:23;
+    ont:hizoComentario com:18, com:19, com:20, com:21, com:22, com:23, com:24;
+    ont:userDaLikeNoticia not:5;
+    foaf:mbox "juan@example.com";
+    foaf:name "JuanPero2".

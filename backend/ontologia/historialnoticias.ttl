@@ -1,0 +1,17 @@
+@prefix : <http://datastorm/ontology#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:HistorialNoticia a owl:Class ;
+    rdfs:label "Historial de noticia" ;
+    rdfs:comment "Registro de que un usuario ha visualizado una noticia en una fecha determinada" .
+    dfs:subClassOf dbo:ViewAction ;
+    owl:equivalentClass dbo:ViewAction 
+
+:fechaVista a owl:DatatypeProperty ;
+    rdfs:domain :HistorialNoticia ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "fecha de visualización de la noticia" .

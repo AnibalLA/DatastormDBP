@@ -1,0 +1,73 @@
+.box {
+  margin-top: 4vw;
+}
+
+.search {
+  width: 75vw;
+  margin: 2vw auto;
+  display: flex;
+  align-items: center;
+}
+.search input{
+  width: 90%;
+  height: 3.6vw;
+  font-size: clamp(2px, 2vw, 30px);
+}
+.search button{
+  width: 10%;
+  height: 4vw;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  font-size: clamp(1px, 1.5vw, 30px);
+}
+.search button:hover {
+  background-color: rgb(185, 139, 53);
+}
+
+.divider {
+  width: 85vw;
+  border-top: 3px solid white;
+  margin: 2vw auto;
+}
+
+.container{
+  margin: auto;
+  width: 85vw;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  padding: 2vw;
+}
+.item img{
+  width: 30%;
+}
+@media (max-width: 1800px) {
+  .item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .item img{
+    width: 40%;
+  }
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: #ccc;
+}
+.text-block h2 {
+  font-size: clamp(10px, 3vw, 60px);
+}
+
+.info {
+  margin: 2% 5%;
+  padding: 1%;
+  background-color: rgb(40, 40, 40);
+  font-size: clamp(10px, 1vw, 30px);
+}

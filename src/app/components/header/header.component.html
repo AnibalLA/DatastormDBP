@@ -1,0 +1,18 @@
+<header>
+    <div class="header">
+        <button>
+            <h1 routerLink="/">DataStorm</h1>
+        </button>
+        <div class="campo">
+            <button routerLink="/news">News</button>
+            <button routerLink="/aboutus">About Us</button>
+            <button 
+            routerLink="/login" 
+            [disabled]="estaLogueado"
+            [class.boton-desactivado]="estaLogueado">
+            Log In </button>
+            <button routerLink="/searching">🔍</button>
+            <button (click)="irMenu()">☰</button>
+        </div>
+    </div>
+</header>

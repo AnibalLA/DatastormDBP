@@ -1,0 +1,92 @@
+@prefix : <http://example.org/ontology#> .
+@prefix user: <http://example.org/usuario#> .
+@prefix publicacion: <http://example.org/publicacion#> .
+@prefix comentario: <http://example.org/comentario#> .
+@prefix historial: <http://example.org/historial#> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+<http://example.org/ontology>
+    a owl:Ontology ;
+    owl:imports 
+        <http://example.org/usuario> ,
+        <http://example.org/publicacion> ,
+        <http://example.org/comentario> ,
+        <http://example.org/historial> .
+
+# relacioness entre clase ayudaaa
+
+# comentario y usuario
+:comentadoPor a owl:ObjectProperty ;
+    rdfs:domain comentario:Comentario ;
+    rdfs:range user:Usuario ;
+    rdfs:label "comentado por" ;
+    rdfs:comment "Relacionn entre un comentario y el usuario que lo hizo" ;
+    owl:equivalentProperty dbo:creator .
+
+#  comment yPublicacion
+:comentaSobre a owl:ObjectProperty ;
+    rdfs:domain comentario:Comentario ;
+    rdfs:range publicacion:Publicacion ;
+    rdfs:label "comentario sobre publicación" ;
+    rdfs:comment "Relacion entre un comentario y la publicación comentada" ;
+    owl:equivalentProperty dbo:about .
+
+# Publicacion y Usuario
+:autor a owl:ObjectProperty ;
+    rdfs:domain publicacion:Publicacion ;
+    rdfs:range user:Usuario ;
+    rdfs:label "autor de la publicación" ;
+    owl:equivalentProperty dbo:author .
+
+# Historial y el usuario
+:usuarioHistorial a owl:ObjectProperty ;
+    rdfs:domain historial:HistorialComentario ;
+    rdfs:range user:Usuario ;
+    rdfs:label "usuario que vio El comentario" ;
+    owl:equivalentProperty dbo:participant .
+
+# Historial y comment
+:comentarioHistorial a owl:ObjectProperty ;
+    rdfs:domain historial:HistorialComentario ;
+    rdfs:range comentario:Comentario ;
+    rdfs:label "comentario visto en historial" .
+
+# Historial y  Publicacion
+:noticiaHistorial a owl:ObjectProperty ;
+    rdfs:domain historial:HistorialComentario ;
+    rdfs:range publicacion:Publicacion ;
+    rdfs:label "publicación comentada en historial" .
+
+:userDaLike a owl:ObjectProperty ;
+    rdfs:domain user:Usuario ;
+    rdfs:range publicacion:Publicacion ;
+    rdfs:label "dio like" ;
+    rdfs:comment "El usuario dio like a una publicación" ;
+    owl:equivalentProperty dbo:likeAction .
+
+:vistoPor a owl:ObjectProperty ;
+    rdfs:domain :HistorialNoticia ;
+    rdfs:range :Usuario ;
+    rdfs:label "usuario que visualizó la noticia" ;
+    owl:equivalentProperty dbo:agent .
+
+:vistoSobre a owl:ObjectProperty ;
+    rdfs:domain :HistorialNoticia ;
+    rdfs:range :Noticia ;
+    rdfs:label "noticia visualizada" ;
+    owl:equivalentProperty dbo:object .
+
+:dadoPor a owl:ObjectProperty ;
+    rdfs:domain :LikeNoticia ;
+    rdfs:range :Usuario ;
+    rdfs:label "usuario que dio like" ;
+    owl:equivalentProperty dbo:agent .
+
+:dadoASobre a owl:ObjectProperty ;
+    rdfs:domain :LikeNoticia ;
+    rdfs:range :Noticia ;
+    rdfs:label "noticia a la que se dio like" ;
+    owl:equivalentProperty dbo:object .

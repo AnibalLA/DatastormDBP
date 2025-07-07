@@ -1,0 +1,16 @@
+<div class="section-title">
+  Historial de Comentarios
+</div>
+<div class="info-box">
+  <div *ngIf="historial.length === 0">
+    <p>No has visto ningún comentario aún.</p>
+  </div>
+  <ul *ngIf="historial.length > 0">
+    <li *ngFor="let h of historial">
+      <strong>Noticia:</strong> {{ h.titulo }}<br>
+      <strong>Comentario:</strong> {{ h.contenido }}<br>
+      <strong>Fecha vista:</strong> {{ h.fecha_vista | date:'short' }}
+      <hr>
+    </li>
+  </ul>
+</div>

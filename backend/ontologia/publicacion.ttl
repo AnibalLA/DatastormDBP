@@ -1,0 +1,43 @@
+@prefix : <http://datastorm/ontology#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+:Publicacion a owl:Class ;
+    rdfs:label "Publicación" ;
+    rdfs:comment "Una noticia o artículo publicado por un usuario" ;
+    rdfs:subClassOf dbo:Article ;
+    owl:equivalentClass dbo:Article .
+
+:titulo a owl:DatatypeProperty ;
+    rdfs:domain :Publicacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "título de la publicación" .
+
+:contenido a owl:DatatypeProperty ;
+    rdfs:domain :Publicacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "contenido de la publicación" .
+
+:categoria a owl:DatatypeProperty ;
+    rdfs:domain :Publicacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "categoría de la publicación" .
+
+:autor a owl:DatatypeProperty ;
+    rdfs:domain :Publicacion ;
+    rdfs:range xsd:string ;
+    rdfs:label "autor de la publicación" .
+
+:fechaPublicacion a owl:DatatypeProperty ;
+    rdfs:domain :Publicacion ;
+    rdfs:range xsd:date ;
+    rdfs:label "fecha de publicación" .
+
+:likes a owl:DatatypeProperty ;
+    rdfs:domain :Publicacion ;
+    rdfs:range xsd:integer ;
+    rdfs:label "cantidad de likes" .

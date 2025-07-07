@@ -1,0 +1,8 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <rdf:Description rdf:about="/usuario/33">
+        <foaf:mbox>BarcelonaB@gmail.com</foaf:mbox>
+        <foaf:name>Lionel Messi</foaf:name>
+    </rdf:Description>
+</rdf:RDF>

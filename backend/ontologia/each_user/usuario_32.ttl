@@ -1,0 +1,71 @@
+@prefix : <http://example.org/ontology#> .
+@prefix user: <http://example.org/usuario#> .
+@prefix pub: <http://example.org/publicacion#> .
+@prefix like: <http://example.org/like#> .
+@prefix hist: <http://example.org/historial#> .
+@prefix com: <http://example.org/comentario#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+user:usuario32 a :Usuario ;
+    :UserName "Joshua Kimmich" ;
+    :Dia "12"^^xsd:int ;
+    :Mes "11"^^xsd:int ;
+    :Anio "2003"^^xsd:int .
+
+hist:historialnoticia5 a :HistorialNoticia ;
+    :fechaVista "Mon Jun 09 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :vistoPor user:usuario32 ;
+    :vistoSobre pub:publicacion18 .
+
+hist:historialnoticia6 a :HistorialNoticia ;
+    :fechaVista "Mon Jun 09 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :vistoPor user:usuario32 ;
+    :vistoSobre pub:publicacion17 .
+
+hist:historialnoticia7 a :HistorialNoticia ;
+    :fechaVista "Mon Jun 09 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :vistoPor user:usuario32 ;
+    :vistoSobre pub:publicacion20 .
+
+hist:historialnoticia11 a :HistorialNoticia ;
+    :fechaVista "Tue Jun 10 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :vistoPor user:usuario32 ;
+    :vistoSobre pub:publicacion18 .
+
+like:likeundefined a :LikeNoticia ;
+    :fechaLike "Mon Jun 09 2025 08:51:56 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :dadoPor user:usuario32 ;
+    :dadoASobre pub:publicacion16 .
+
+like:likeundefined a :LikeNoticia ;
+    :fechaLike "Mon Jun 09 2025 08:51:18 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :dadoPor user:usuario32 ;
+    :dadoASobre pub:publicacion17 .
+
+like:likeundefined a :LikeNoticia ;
+    :fechaLike "Mon Jun 09 2025 09:30:58 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :dadoPor user:usuario32 ;
+    :dadoASobre pub:publicacion18 .
+
+like:likeundefined a :LikeNoticia ;
+    :fechaLike "Mon Jun 09 2025 08:48:23 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :dadoPor user:usuario32 ;
+    :dadoASobre pub:publicacion19 .
+
+like:likeundefined a :LikeNoticia ;
+    :fechaLike "Mon Jun 09 2025 09:31:10 GMT-0500 (hora estándar de Perú)"^^xsd:dateTime ;
+    :dadoPor user:usuario32 ;
+    :dadoASobre pub:publicacion20 .
+
+com:comentario25 a :Comentario ;
+    :ContenidoComent "Buena" ;
+    :FechaComent "Sun Jun 08 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:date ;
+    :AutorComent user:usuario32 ;
+    :RelacionadoA pub:publicacion18 .
+
+com:comentario30 a :Comentario ;
+    :ContenidoComent "w" ;
+    :FechaComent "Mon Jun 09 2025 00:00:00 GMT-0500 (hora estándar de Perú)"^^xsd:date ;
+    :AutorComent user:usuario32 ;
+    :RelacionadoA pub:publicacion18 .
+
